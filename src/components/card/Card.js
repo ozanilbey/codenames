@@ -16,7 +16,7 @@ const Card = props => (
       <div
         className="back"
         style={{
-          backgroundImage: `url("/images/characters/${props.id}.png")`
+          backgroundImage: `url("images/characters/${props.id}.png")`
         }}>
       </div>
     </div>

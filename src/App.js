@@ -108,12 +108,10 @@ class App extends Component {
     }
     this.setState({ deck })
     // Add record
-    console.log('player', player)
     this.addRecord(deck[index].word, player, player === deck[index].character)
     // Evaluate
     if (deck[index].isEndingGame) {
       this.endGame(otherPlayer)
-      console.log(otherPlayer, 'won')
     } else if (
       players.includes(deck[index].character) &&
       deck.filter(item =>
@@ -121,9 +119,7 @@ class App extends Component {
       ).length === 0
     ) {
       this.endGame(deck[index].character)
-      console.log(deck[index].character, 'won')
     } else if (deck[index].character !== player) {
-      console.log('switched to', otherPlayer)
       this.setStatus(
         language.statusText(
           'switched',

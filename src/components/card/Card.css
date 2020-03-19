@@ -1,0 +1,65 @@
+.card {
+  position: relative;
+  width: 17vh;
+  height: 17vh;
+  -webkit-perspective: 85vh;
+  -moz-perspective: 85vh;
+  -o-perspective: 85vh;
+  perspective: 85vh;
+}
+
+.card > .container {
+  position: absolute;
+  width: 17vh;
+  height: 17vh;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 1s;
+  -moz-transition: -moz-transform 1s;
+  -o-transition: -o-transform 1s;
+  transition: transform 1s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform-origin: 50% 50%;
+}
+
+.card > .container.flipped {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.card > .container > * {
+  overflow: hidden;
+  display: block;
+  position: absolute;
+  height: 17vh;
+  width: 17vh;
+  color: black;
+  font-size: 1.25rem;
+  font-weight: bold;
+  line-height: 17vh;
+  text-align: center;
+  border-radius: 1.7vh;
+  box-shadow: 0 0 .5rem 0 rgba(0, 0, 0, .05);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.card > .container > .front {
+  background-color: white;
+}
+
+.card > .container > .back {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}

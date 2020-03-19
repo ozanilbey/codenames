@@ -1,0 +1,71 @@
+.panel {
+  display: flex;
+  flex-direction: column;
+  width: 15rem;
+  margin-right: 5vh;
+}
+
+.panel > .name {
+  color: white;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  letter-spacing: .5rem;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: black;
+}
+
+.panel > .status {
+  padding: .5rem 0;
+  font-size: .875rem;
+  text-align: center;
+  border: .125rem solid black;
+  border-top: none;
+}
+
+.panel > .instructions, .panel > .records {
+  flex-grow: 1;
+  margin: 1.25rem 0;
+}
+
+.panel > .instructions {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-size: .75rem;
+  line-height: 1rem;
+  text-align: center;
+}
+
+.panel > .instructions > .text {
+  margin-bottom: 1.25rem;
+}
+
+.panel > .instructions > .table {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 15rem;
+  height: 15rem;
+}
+
+.panel > .instructions > .table > * {
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: .25rem;
+}
+
+.panel > .options {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.panel > .options > * {
+  flex-grow: 1;
+  margin-right: 1rem;
+}
+
+.panel > .options > *:last-child {
+  margin-right: 0;
+}

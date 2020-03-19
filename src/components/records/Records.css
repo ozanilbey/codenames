@@ -1,0 +1,24 @@
+.records {
+  display: flex;
+  font-size: .9rem;
+  line-height: 1.25rem;
+}
+
+.records > .list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.records > .list > .item.label {
+  margin-bottom: .5rem;
+  font-size: .75rem;
+  font-weight: bold;
+  font-variant: all-small-caps;
+}
+
+.records > .list > .item > .result {
+  margin-right: .25rem;
+  font-weight: bold;
+}

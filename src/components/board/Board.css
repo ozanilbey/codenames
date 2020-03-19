@@ -1,0 +1,17 @@
+.board {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.board.disabled {
+  pointer-events: none;
+}
+
+.board > .collection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 90vh;
+  height: 90vh;
+}

@@ -9,8 +9,8 @@ import Board from './components/board/Board.js'
 import { upperCaseFirst } from './utilities/format.js'
 
 // Data
-import words from './data/languages/tr-TR/words.json'
-import language from './data/languages/tr-TR/configuration.js'
+import words from './data/languages/tr/words.json'
+import language from './data/languages/tr/configuration.js'
 import characters from './data/definitions/characters.js'
 
 // State

@@ -193,7 +193,9 @@ class App extends Component {
             records: {
               categories: players.map(player => ({
                 id: player,
-                label: language.players[player].displayName
+                label: `${language.players[player].displayName} (${
+                  deck.filter(item => item.character === player && !item.isFlipped).length
+                })`
               })),
               data: records
             },

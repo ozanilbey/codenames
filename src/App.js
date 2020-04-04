@@ -58,7 +58,6 @@ class App extends Component {
     players.sort((a,b) => Math.random() - .5)
     // Create deck
     let deck = []
-    const list = [...words]
     Object.keys(characters).forEach(character => {
       let { count, color, isEndingGame = false } = characters[character]
       character === players[0] && count++
@@ -68,13 +67,13 @@ class App extends Component {
           character,
           isEndingGame,
           id: `${character}/${index + 1}`,
-          word: list.splice(Math.floor(Math.random() * list.length), 1)[0],
+          word: words.splice(Math.floor(Math.random() * words.length), 1)[0],
           isFlipped: false
         })
       }
     })
     // Shuffle deck
-    deck.sort((a,b) => Math.random() - .5)
+    deck.sort((a, b) => Math.random() - 0.5)
     // Set final data
     this.setState({
       deck,

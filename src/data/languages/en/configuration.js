@@ -1,5 +1,5 @@
 export default {
-  code: 'tr',
+  code: 'en',
   players: {
     'blue-agent': { displayName: 'blue agents' },
     'red-agent': { displayName: 'red agents' }

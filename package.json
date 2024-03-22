@@ -8,7 +8,7 @@
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-scripts": "3.4.0",
-    "translate": "^1.1.2"
+    "translate": "^3.0.0"
   },
   "scripts": {
     "predeploy": "npm run build",
